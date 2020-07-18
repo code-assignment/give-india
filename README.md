@@ -40,13 +40,13 @@ Step-3: Start the application by command "node index.js". Below result suffice t
 
 Step-4: Start testing the Api enpoints: http://localhost:3000/transfer, with below parameters.
 
-    Method = POST
+  Method = POST
 
   Headers: 
 
     Content-Type = application/json
 
-    Body: select "raw" type data 
+  Body: select "raw" type data 
   
     {
 	    "fromAccountId": "369852",
