@@ -1,0 +1,17 @@
+{
+  "name": "mybank",
+  "version": "1.0.0",
+  "description": "MyBank Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rajan Mishra",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.24",
+    "properties-reader": "^2.0.0"
+  }
+}
