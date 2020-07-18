@@ -1,5 +1,6 @@
 # give-india
 A REST Api for transaction service on below conditions.
+
 Account types are ‘Savings’, ‘Current’ and ‘BasicSavings’. A single user can have multiple such accounts. The following rules apply:
 * Transfer between accounts belonging to the same user is not allowed.
 * The balance in ‘BasicSavings’ account type should never exceed Rs. 50,000
