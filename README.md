@@ -35,9 +35,7 @@ Step-2: Open Command Propmt and navigate to the root directory.
 Step-3: Start the application by command "node index.js". Below result suffice the success running of server and DB connection.
 
     Starting application.
-
     Web server listning on :3000
-
     DB Connection is success.
 
 Step-4: Start testing the Api enpoints: http://localhost:3000/transfer, with below parameters.
