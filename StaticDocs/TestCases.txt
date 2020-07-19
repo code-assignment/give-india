@@ -1,10 +1,11 @@
-Endpoint:	URL: http://localhost:3000/transfer
-			Method: POST
-			Headers:
-				Content-Type = application/json
-			Body: raw
+==========Setup(Postman)=============
+Endpoint URL: http://localhost:3000/transfer
+Method: POST
+Headers:
+	Content-Type = application/json
+Body: raw
 				 
-Test Cases:
+===========Test Cases===========
 
 1. Input
 	{
