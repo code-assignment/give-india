@@ -1,0 +1,77 @@
+Endpoint:	URL: http://localhost:3000/transfer
+			Method: POST
+			Headers:
+				Content-Type = application/json
+			Body: raw
+				 
+Test Cases:
+
+1. Input
+	{
+		"fromAccountId": "123456",
+		"toAccountId": "321654",
+		"amount": "100000"
+	}
+	Output
+	{
+		"errorCode": 404,
+		"errorMessage": "Transfer between same user account is not allowed."
+	}
+2. Input
+	{
+		"fromAccountId": "123456",
+		"toAccountId": "369741",
+		"amount": "10000"
+	}
+	Output
+	{
+		"errorCode": 404,
+		"errorMessage": "Basic Savings type account Can't have more than RS. 50,000.00 "
+	}
+3. Input
+	{
+		"fromAccountId": "123456",
+		"toAccountId": "369741",
+		"amount": "100000000"
+	}
+	Output
+	{
+		"errorCode": 404,
+		"errorMessage": "Insufficent balance."
+	}
+4. 	Input
+	{
+		"fromAccountId": "369741",
+		"toAccountId": "123456",
+		"amount": "1000000"
+	}
+	Output
+	{
+		"newSrcBalance": 4000000,
+		"totalDestBalance": 16500000,
+		"transferedAt": "2020-07-19T03:47:21.357Z"
+	}
+5. Input
+	{
+		"fromAccountId": "36974100000",
+		"toAccountId": "123456",
+		"amount": "1000000"
+	}
+	Output
+	{
+		"errorCode": 404,
+		"errorMessage": "Unable to get account: 36974100000"
+	}
+6. Input
+	{
+		"fromAccountId": "369741",
+		"toAccountId": "123456",
+		"amount": "0"
+	}
+	Output
+	{
+		"errorCode": 404,
+		"errorMessage": "Amount can't be 0 or negative(-ve)"
+	}
+	
+Limitation: Input must have 3 parameters with correct name.
