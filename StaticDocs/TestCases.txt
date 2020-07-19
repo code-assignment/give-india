@@ -1,4 +1,20 @@
+=======Steps to run the Application=====
+Prerequisite: NodeJs must be installed in your Operating system.
+
+Step-1: Download the source code.
+
+Step-2: Open Command Propmt and navigate to the root directory of the downloaed directory.
+
+		Command: cd C:\Users\Admin\repo\code-assignment\give-india	
+
+Step-3: Start the application by command "node index.js". Below result suffice the success running of server and DB connection.
+		
+		Starting application.
+		Web server listning on :3000
+		DB Connection is success.
+
 ==========Setup(Postman)=============
+
 Endpoint URL: http://localhost:3000/transfer
 Method: POST
 Headers:
