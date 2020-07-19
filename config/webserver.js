@@ -3,7 +3,7 @@ const http = require('http'),
       webRouter = require('../router/WebRouter.js');
 const app = express();
 const port = process.env.HTTP_PORT || process.env.PORT || 3000;
-let httpServer;
+var httpServer;
 
 exports.initialize = ()=>{
   return new Promise((resolve, reject)=>{
